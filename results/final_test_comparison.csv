@@ -1,0 +1,13 @@
+model,run,protocol,accuracy,macro_f1
+scratch_cnn,driver_based_aug_False,driver_based,0.6131434121074781,0.612735843048917
+scratch_cnn,driver_based_aug_True,driver_based,0.6876011654257042,0.6934129510357869
+scratch_cnn,random_aug_True,random,0.9875296912114014,0.9871598651414788
+residual_cnn,driver_based_aug_True,driver_based,0.6714146973130463,0.6751972647402409
+residual_cnn,random_aug_True,random,0.9922802850356295,0.9921136958954275
+pretrained_resnet18,driver_based,driver_based,0.7808352217546132,0.7775141795413076
+pretrained_resnet18_high_lr,driver_based,driver_based,0.8433149886694723,0.8363101436268849
+pretrained_vgg16,driver_based,driver_based,0.8025250890255746,0.8077445901079745
+pretrained_vgg16_high_lr,driver_based,driver_based,0.8627387504046617,0.8529207986501672
+resnet18_512x384,driver_based,driver_based,0.8973777921657494,0.8965989348003482
+resnet18_384x288,driver_based,driver_based,0.8692133376497249,0.8657129370623645
+resnet18_soft_vote,equal_weights,driver_based,0.8805438653285853,0.8775119880008064

@@ -1,0 +1,21 @@
+{
+  "architecture": "pretrained_vgg16_high_lr",
+  "weights": "VGG16_Weights.IMAGENET1K_V1",
+  "protocol": "driver_based",
+  "seed": 42,
+  "hardware": "NVIDIA GeForce RTX 5080",
+  "batch_size": 32,
+  "head_epochs": 3,
+  "head_lr": 0.001,
+  "backbone_lr": 0.0001,
+  "finetune_head_lr": 0.001,
+  "weight_decay": 0.0001,
+  "max_finetune_epochs": 40,
+  "patience": 10,
+  "selection": "validation macro-F1",
+  "preprocessing": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)",
+  "augmentation": "rotation 8 degrees, brightness/contrast 0.15, training only",
+  "best_epoch": 26,
+  "best_stage": "fine_tune",
+  "hours": 2.68923003719447
+}

@@ -1,0 +1,6 @@
+imgs/
+__pycache__/
+.ipynb_checkpoints/
+
+# Exclude PDF documents
+*.pdf

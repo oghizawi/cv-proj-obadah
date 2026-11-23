@@ -1,0 +1,26 @@
+{
+  "protocol": "driver_based",
+  "voting": "mean of probabilities",
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "class_order": [
+    "c0",
+    "c1",
+    "c2",
+    "c3",
+    "c4",
+    "c5",
+    "c6",
+    "c7",
+    "c8",
+    "c9"
+  ],
+  "members": {
+    "512x384": "c:\\Users\\Obada\\Downloads\\CV-Project\\results\\ensemble_resnet18_512x384\\driver_based",
+    "384x288": "c:\\Users\\Obada\\Downloads\\CV-Project\\results\\ensemble_resnet18_384x288\\driver_based"
+  },
+  "hardware": "NVIDIA GeForce RTX 5080",
+  "total_training_hours": 2.9215168516944523
+}

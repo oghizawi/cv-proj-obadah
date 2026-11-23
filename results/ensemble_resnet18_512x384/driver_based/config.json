@@ -1,0 +1,21 @@
+{
+  "architecture": "ensemble_resnet18_512x384",
+  "weights": "ResNet18_Weights.IMAGENET1K_V1",
+  "protocol": "driver_based",
+  "seed": 42,
+  "hardware": "NVIDIA GeForce RTX 5080",
+  "batch_size": 32,
+  "head_epochs": 3,
+  "head_lr": 0.001,
+  "backbone_lr": 0.0001,
+  "finetune_head_lr": 0.001,
+  "weight_decay": 0.0001,
+  "max_finetune_epochs": 40,
+  "patience": 10,
+  "selection": "validation macro-F1",
+  "preprocessing": "Full-frame resize HxW=(384, 512); ImageNet normalization",
+  "augmentation": "rotation 8 degrees, brightness/contrast 0.15, training only",
+  "best_epoch": 21,
+  "best_stage": "fine_tune",
+  "hours": 1.7562913695833413
+}
